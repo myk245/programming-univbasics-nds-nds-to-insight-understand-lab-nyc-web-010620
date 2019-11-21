@@ -6,12 +6,12 @@ require 'directors_database'
 def pretty_print_nds(nds)
   # Change the code below to pretty print the nds with pp
   pp nds
+  binding.pry
 end
 
 pretty_print_nds(directors_database)
 
 def print_first_directors_movie_titles
-    binding.pry
   row_index = 0
   while row_index < directors_database.length do
     element_index = 0
