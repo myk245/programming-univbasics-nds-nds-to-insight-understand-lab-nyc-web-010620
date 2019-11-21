@@ -10,6 +10,13 @@ end
 pretty_print_nds(directors_database)
 
 def print_first_directors_movie_titles
-  puts directors_database[0][:movies][0][:title]
+  row_index = 0
+  while row_index < directors_database.length do
+    element_index = 0
+    while element_index < directors_database[row_index].count do
+      puts directors_database[row_index][element_index]
+      element_index += 1
+    end
+  #puts directors_database[0][:movies][0][:title]
 
 end
