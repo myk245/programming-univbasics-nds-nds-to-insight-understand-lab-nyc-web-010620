@@ -1,3 +1,4 @@
+require 'pry'
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'directors_database'
 # Call the method directors_database to retrieve the NDS
@@ -14,6 +15,7 @@ def print_first_directors_movie_titles
   while row_index < directors_database.length do
     element_index = 0
     while element_index < directors_database[row_index].count do
+binding.pry
       puts directors_database[row_index][element_index]
       element_index += 1
     end
