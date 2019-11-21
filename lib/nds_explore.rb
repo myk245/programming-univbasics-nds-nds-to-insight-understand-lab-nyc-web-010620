@@ -6,7 +6,6 @@ require 'directors_database'
 def pretty_print_nds(nds)
   # Change the code below to pretty print the nds with pp
   pp nds
-  binding.pry
 end
 
 pretty_print_nds(directors_database)
@@ -19,5 +18,4 @@ def print_first_directors_movie_titles
       element_index += 1
     end
   #puts directors_database[0][:movies][0][:title]
-end
 end
