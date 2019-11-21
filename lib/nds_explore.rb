@@ -20,5 +20,5 @@ def print_first_directors_movie_titles
       element_index += 1
     end
   #puts directors_database[0][:movies][0][:title]
-end 
+end
 end
