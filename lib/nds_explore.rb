@@ -11,10 +11,10 @@ end
 pretty_print_nds(directors_database)
 
 def print_first_directors_movie_titles
+    binding.pry
   row_index = 0
   while row_index < directors_database.length do
     element_index = 0
-    binding.pry
     while element_index < directors_database[row_index].count do
       puts directors_database[row_index][element_index]
       element_index += 1
